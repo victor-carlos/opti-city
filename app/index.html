@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <title></title>
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+    <script type="text/javascript" src="js/creative.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+    <div>
+      <form action="" method="post" />
+        <fieldset id="f1">
+          <legend>Objeto</legend>
+          <label><p>Altura: </p></label>
+          <input type="number" name="altura" id="altura" />
+          <br />
+          <label><p>Largura: </p></label>
+          <input type="number" name="largura" id="largura" />
+          <br />
+          <label><p>Profundidade: </p></label>
+          <input type="number" name="profundidade" id="profundidade" />
+          <br /><br />
+        </fieldset>
+        <fieldset id="f2">
+          <legend>Metal</legend>
+          <label><p>Superior Esquerdo: </p></label>
+          <input type="number" name="supesq" id="supesq" />
+          <br />
+          <label><p>Superior Direito: </p></label>
+          <input type="number" name="supdir" id="supdir" />
+          <br />
+          <label><p>Centro: </p></label>
+          <input type="number" name="centro" id="centro" />
+          <br />
+          <label><p>Inferior Esquerdo: </p></label>
+          <input type="number" name="infesq" id="infesq" />
+          <br />
+          <label><p>Inferior Direito: </p></label>
+          <input type="number" name="infdir" id="infdir" />
+          <br /><br />
+        </fieldset>
+        <br /><center>
+        <input id="f2" type="button" name="calcular" id="calcular" value="Calcular" onclick="calc();" />
+        <fieldset id="f3">
+          <legend>Agendamento da Coleta</legend>
+          <p>O preço do metal é de R$<div id="valor"></div></p>
+          <label><p>Insira a data:</p></label>
+          <input type="date" name="coleta" id="coleta" />
+          <br /><br />
+        </fieldset>
+        <br />
+        <input id="f3" type="button" name="confirmar" id="confirmar" value="Confirmar" onclick="conf" />
+      </center><br />
+      </form>
+    </div>
+</html>
